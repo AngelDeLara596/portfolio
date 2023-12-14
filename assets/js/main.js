@@ -5,9 +5,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+
 (function() {
   "use strict";
-
+  
   /**
    * Easy selector helper function
    */
@@ -259,4 +262,37 @@
    */
   new PureCounter();
 
+  emailjs.init('fwrVSPvKQguBdF4Ml'); // EmailJS
+
 })()
+
+function sendEmail() {
+  event.preventDefault();
+ const templateParams = {
+      from_name: document.getElementById('name').value,
+      from_email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+  };
+
+  // Imprimir valores en la consola para asegurarte de que se recogen correctamente
+  console.log('from_name:', templateParams.from_name);
+  console.log('from_email:', templateParams.from_email);
+  console.log('subject:', templateParams.subject);
+  console.log('message:', templateParams.message);
+
+  // Llamada a la función emailjs.send() para enviar el correo electrónico
+  emailjs.send("service_d3u33hf","template_zb7bb3e",{
+    from_name: document.getElementById('name').value,
+    from_email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value
+    }).then(function(response) {
+      console.log('Correo enviado con éxito!', response);
+      // Cambiar el texto del label después de enviar el correo
+      document.getElementById('send_status').innerText = 'Sent!';
+  }, function(error) {
+      console.error('Error al enviar el correo', error);
+      // Resto del código para manejar el error
+  });
+}
