@@ -46,9 +46,10 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Main CSS File -->
-    <link href="assets/css/style-light.css" rel="stylesheet" />
+    <link href="assets/css/style-light.css" rel="stylesheet" id="theme-stylesheet"/>
   </head>
 
   <body>
@@ -59,6 +60,9 @@
     <header id="header">
       <div class="d-flex flex-column">
         <div class="profile">
+          <div class="theme-selector mt-3">
+            <i class="fas fa-adjust fa-2x theme-toggle-icon" id="theme-toggle"></i>
+          </div>
           <img
             src="assets/img/profile_img.jpg"
             alt=""
@@ -79,9 +83,6 @@
               class="linkedin"
               ><i class="bx bxl-linkedin"></i
             ></a>
-          </div>
-          <div class="theme-selector mt-3 text-center">
-            <button id="theme-toggle"><i class="bx bxl-facebook"></i></button>
           </div>
         </div>
 

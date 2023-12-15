@@ -296,3 +296,18 @@ function sendEmail() {
       // Resto del código para manejar el error
   });
 }
+
+const themeToggle = document.getElementById('theme-toggle');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+  console.log(themeStylesheet.getAttribute('href'));
+    // Función para cambiar entre temas
+    themeToggle.addEventListener('click', function() {
+      // Verifica qué tema está activo actualmente
+      if (themeStylesheet.getAttribute('href') === 'assets/css/style-light.css') {
+        // Cambia al tema oscuro
+        themeStylesheet.setAttribute('href', 'assets/css/style-dark.css');
+      } else {
+        // Cambia al tema claro
+        themeStylesheet.setAttribute('href', 'assets/css/style-light.css');
+      }
+    });
