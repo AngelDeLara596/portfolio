@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Inner Page - iPortfolio Bootstrap Template</title>
+    <title>Portfolio Details</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/favicon.ico" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -43,7 +43,6 @@
     />
 
     <!-- =======================================================
-  
   ======================================================== -->
   </head>
 
@@ -56,7 +55,10 @@
       <div class="d-flex flex-column">
         <div class="profile">
           <div class="theme-selector mt-3">
-            <i class="fas fa-adjust fa-2x theme-toggle-icon" id="theme-toggle"></i>
+            <i
+              class="fas fa-adjust fa-2x theme-toggle-icon"
+              id="theme-toggle"
+            ></i>
           </div>
           <img
             src="assets/img/profile-img.jpg"
@@ -84,28 +86,8 @@
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
-              <a href="#hero" class="nav-link scrollto active"
+              <a href="index.html" class="nav-link scrollto active"
                 ><i class="bx bx-home"></i> <span>Home</span></a
-              >
-            </li>
-            <li>
-              <a href="#about" class="nav-link scrollto"
-                ><i class="bx bx-user"></i> <span>About</span></a
-              >
-            </li>
-            <li>
-              <a href="#resume" class="nav-link scrollto"
-                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
-              >
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link scrollto"
-                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="nav-link scrollto"
-                ><i class="bx bx-envelope"></i> <span>Contact</span></a
               >
             </li>
           </ul>
@@ -117,24 +99,91 @@
 
     <main id="main">
       <!-- ======= Breadcrumbs ======= -->
-      <section class="breadcrumbs">
+      <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Inner Page</h2>
+            <h2>Project Details</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li>Inner Page</li>
+              <li>Project Details</li>
             </ol>
           </div>
         </div>
       </section>
       <!-- End Breadcrumbs -->
 
-      <section class="inner-page">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
         <div class="container">
-          <p>Example inner page template</p>
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets\img\portfolio\soon.jpg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets\img\portfolio\soon.jpg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets\img\portfolio\soon.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category</strong>: ...</li>
+                  <li><strong>Client</strong>: ...</li>
+                  <li><strong>Project date</strong>: ...</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="#">None</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Coming Soon...</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus tristique tempor dolor, sed pretium lectus interdum
+                  in. Aliquam vel dictum nibh, id feugiat enim. Nullam nibh
+                  eros, ornare vitae lectus eget, efficitur faucibus urna.
+                  Nullam blandit commodo libero nec faucibus. Proin malesuada
+                  neque non urna tincidunt commodo. Aenean tristique nisl a eros
+                  dictum rutrum ut eget dui. Aenean sit amet nulla a enim tempus
+                  vulputate a non odio. Donec vehicula pretium nulla sit amet
+                  congue. Etiam maximus nec sapien ac tempor. Integer in eros
+                  mi. Integer ornare massa id efficitur pulvinar. Praesent odio
+                  metus, facilisis nec auctor a, finibus eget arcu. Donec eu
+                  diam vestibulum, tincidunt ipsum vitae, varius sapien. Morbi
+                  egestas libero ante. Aliquam vitae lorem ultricies, blandit
+                  dolor cursus, egestas neque. Maecenas euismod lorem eu sapien
+                  semper rutrum. Pellentesque dapibus mi erat, non vehicula
+                  ligula luctus vehicula. Aliquam lacinia libero nec erat
+                  accumsan, fringilla vestibulum tortor bibendum. Nulla vel
+                  blandit elit, ac pellentesque est. In sagittis risus vel risus
+                  lobortis venenatis. Morbi vel finibus quam. Etiam non sapien
+                  non lectus rutrum molestie sit amet pulvinar ex. Cras erat
+                  urna, varius eu porttitor sed, malesuada id tellus. Phasellus
+                  ut nisi vitae est laoreet placerat et ac dolor. Praesent
+                  tristique id urna in imperdiet. Integer quis molestie nisi.
+                  Nam sed porttitor sapien. Sed maximus ullamcorper magna, nec
+                  ultrices velit dictum facilisis. Curabitur dapibus vitae nisi
+                  in interdum.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- End Portfolio Details Section -->
     </main>
     <!-- End #main -->
 
