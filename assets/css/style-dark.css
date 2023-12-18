@@ -17,7 +17,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #D8D7D6;
-    background-color: #292929;
+    background-color: #363636;
   }
   
   a {
@@ -318,7 +318,7 @@ body {
   }
   
   .section-bg {
-    background: #0A0702;
+    background: #444444;
   }
   
   .section-title {
@@ -545,7 +545,7 @@ body {
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
-    background: #000;
+    background: #3d3d3d;
     border-radius: 50px;
     padding: 2px 15px;
   }
