@@ -295,6 +295,7 @@ function sendEmail() {
         console.log("Correo enviado con éxito!", response);
         // Change label text afet email is sent
         document.getElementById("send_status").innerText = "Sent!";
+        alert("Sent!");
       },
       function (error) {
         console.error("Error al enviar el correo", error);
